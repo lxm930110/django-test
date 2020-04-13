@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e9e2127-703d-46a9-a67b-de5a60eea967" name="Default Changelist" comment="1.添加request五种方式，1.1拼接路径(正则匹配)，1.2查询字符串(request.GET)，1.3form表单请求方式(request.POST),1.4not_form非form表单请求方式(request.body)，注意拿到的是二进制数据格式，1.5请求头请求方式(request.META),返回的是字典数据格式&#10;2 可以给子路由取别名，在视图函数里面反解析获取请求路径，并可以根据获取的请求路径重定向到对应的功能函数并返回给前端浏览器">
+    <list default="true" id="7e9e2127-703d-46a9-a67b-de5a60eea967" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/methods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/methods/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zdemo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/zdemo/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,15 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/methods/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -42,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/cresponse/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+              <caret line="7" column="37" selection-end-line="8" selection-end-column="1" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -50,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cresponse/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+            <state relative-caret-position="301">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -65,10 +55,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zdemo/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+            <state relative-caret-position="541">
+              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
               <folding>
                 <element signature="e#704#736#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ccookie/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ccookie/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,12 +130,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="PUSH_TAGS">
-      <GitPushTagMode>
-        <option name="argument" value="--follow-tags" />
-        <option name="title" value="Current Branch" />
-      </GitPushTagMode>
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -133,15 +141,17 @@
         <option value="$PROJECT_DIR$/methods/urls.py" />
         <option value="$PROJECT_DIR$/auser/urls.py" />
         <option value="$PROJECT_DIR$/methods/views.py" />
-        <option value="$PROJECT_DIR$/zdemo/urls.py" />
         <option value="$PROJECT_DIR$/cresponse/urls.py" />
         <option value="$PROJECT_DIR$/cresponse/views.py" />
+        <option value="$PROJECT_DIR$/zdemo/urls.py" />
+        <option value="$PROJECT_DIR$/ccookie/urls.py" />
+        <option value="$PROJECT_DIR$/ccookie/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="552" />
-    <option name="y" value="34" />
+    <option name="x" value="334" />
+    <option name="y" value="69" />
     <option name="width" value="1515" />
     <option name="height" value="1093" />
   </component>
@@ -164,17 +174,12 @@
             <path>
               <item name="zdemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="zdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="auser" type="462c0819:PsiDirectoryNode" />
+              <item name="ccookie" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zdemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="zdemo" type="462c0819:PsiDirectoryNode" />
               <item name="cresponse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="zdemo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -271,7 +276,7 @@
       <updated>1586651312782</updated>
       <workItem from="1586651314220" duration="19308000" />
       <workItem from="1586707664888" duration="17383000" />
-      <workItem from="1586781960109" duration="9043000" />
+      <workItem from="1586781960109" duration="10424000" />
     </task>
     <task id="LOCAL-00001" summary="1.创建了子运用 2.注册子运用 3.创建视图函数 4.在总工程主路由设置了子路由 5.添加了子路由 6.设置静态文件 7.配置了文件 8.路由的屏蔽 9.在设置里面 修改了汉化和时区">
       <created>1586682383411</created>
@@ -294,11 +299,18 @@
       <option name="project" value="LOCAL" />
       <updated>1586781570453</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1.response响应方式 (HttpResponse)&#10;1.1 response=HttpResponse(),response.content='',response.content_type='',response.status_code='', #属性&#10;1.2 HttpResponse(content='',content_type='',status='') # 参数&#10;&#10;2 JsonResponse  (HttpResponse)的子类&#10;return JsonResponse({'name':'laowang'})&#10;return JsonResponse([{'name':'laowang'}], safe=False) 如果返回是列表格式需要修改safe=False&#10;浏览器得到数据格式为JSON数据格式">
+      <created>1586797717069</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586797717069</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45734000" />
+    <option name="totallyTimeSpent" value="47115000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -310,7 +322,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="552" y="34" width="1515" height="1093" extended-state="0" />
+    <frame x="334" y="69" width="1515" height="1093" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18933699" />
@@ -343,7 +355,8 @@
     <MESSAGE value="1.创建了子运用 2.注册子运用 3.创建视图函数 4.在总工程主路由设置了子路由 5.添加了子路由 6.设置静态文件 7.配置了文件 8.路由的屏蔽 9.在设置里面 修改了汉化和时区" />
     <MESSAGE value="1.创建一个子应用methods 2.添加了拼接参数解析 3.添加了插叙参数解析 4.路由反解析" />
     <MESSAGE value="1.添加request五种方式，1.1拼接路径(正则匹配)，1.2查询字符串(request.GET)，1.3form表单请求方式(request.POST),1.4not_form非form表单请求方式(request.body)，注意拿到的是二进制数据格式，1.5请求头请求方式(request.META),返回的是字典数据格式&#10;2 可以给子路由取别名，在视图函数里面反解析获取请求路径，并可以根据获取的请求路径重定向到对应的功能函数并返回给前端浏览器" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.添加request五种方式，1.1拼接路径(正则匹配)，1.2查询字符串(request.GET)，1.3form表单请求方式(request.POST),1.4not_form非form表单请求方式(request.body)，注意拿到的是二进制数据格式，1.5请求头请求方式(request.META),返回的是字典数据格式&#10;2 可以给子路由取别名，在视图函数里面反解析获取请求路径，并可以根据获取的请求路径重定向到对应的功能函数并返回给前端浏览器" />
+    <MESSAGE value="1.response响应方式 (HttpResponse)&#10;1.1 response=HttpResponse(),response.content='',response.content_type='',response.status_code='', #属性&#10;1.2 HttpResponse(content='',content_type='',status='') # 参数&#10;&#10;2 JsonResponse  (HttpResponse)的子类&#10;return JsonResponse({'name':'laowang'})&#10;return JsonResponse([{'name':'laowang'}], safe=False) 如果返回是列表格式需要修改safe=False&#10;浏览器得到数据格式为JSON数据格式" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.response响应方式 (HttpResponse)&#10;1.1 response=HttpResponse(),response.content='',response.content_type='',response.status_code='', #属性&#10;1.2 HttpResponse(content='',content_type='',status='') # 参数&#10;&#10;2 JsonResponse  (HttpResponse)的子类&#10;return JsonResponse({'name':'laowang'})&#10;return JsonResponse([{'name':'laowang'}], safe=False) 如果返回是列表格式需要修改safe=False&#10;浏览器得到数据格式为JSON数据格式" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/zdemo$manage.coverage" NAME="manage Coverage Results" MODIFIED="1586707617183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -432,26 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zdemo/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-          <folding>
-            <element signature="e#704#736#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cresponse/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/http/response.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
@@ -461,8 +454,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cresponse/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        <state relative-caret-position="301">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zdemo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding>
+            <element signature="e#704#736#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cresponse/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="37" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ccookie/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ccookie/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>

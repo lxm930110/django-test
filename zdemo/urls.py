@@ -26,10 +26,12 @@ urlpatterns = [
     path(r'admin/', admin.site.urls),
 
     path(r'auser/', include('auser.urls')),
-
+    # request五种请求子应用
     path(r'', include('methods.urls')),
-
+    # response子应用
     path(r'', include('cresponse.urls')),
+    # cookie子运用
+    path(r'', include('ccookie.urls')),
 
-    # path(r'', include('brouter.urls')),
+
 ]
