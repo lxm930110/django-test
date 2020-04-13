@@ -7,15 +7,17 @@ from django.shortcuts import render
 from django.urls import reverse
 
 # 拼接路径传参
+
+
 def login(request, city, year):
 
-
     print('城市名:%s 年份:%s' % (city, year))
-
 
     return HttpResponse('拼接路径get请求方式')
 
 # 查询字符串方式传参
+
+
 def login_query(request):
 
     params = request.GET
@@ -27,6 +29,8 @@ def login_query(request):
     return HttpResponse('查询参数get请求方式')
 
 # 表单类型传值
+
+
 def login_form(request):
 
     params = request.POST

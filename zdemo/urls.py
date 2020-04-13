@@ -29,5 +29,7 @@ urlpatterns = [
 
     path(r'', include('methods.urls')),
 
+    path(r'', include('cresponse.urls')),
+
     # path(r'', include('brouter.urls')),
 ]
