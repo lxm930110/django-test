@@ -41,6 +41,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 # 注册运用
+# 添加子运用注册设置
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -49,7 +50,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'auser'   # 添加子运用注册设置
+    'auser',
+    'methods',
 ]
 
 # 中间件
