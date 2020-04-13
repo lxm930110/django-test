@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7e9e2127-703d-46a9-a67b-de5a60eea967" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdemo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/zdemo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdemo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/zdemo/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,19 +16,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auser/apps.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zdemo/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1152">
-              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+            <state relative-caret-position="-195">
+              <caret line="61" column="14" lean-forward="true" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -38,13 +27,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/methods/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="288">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/methods/tests.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -56,13 +50,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/methods/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="323">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
-                <element signature="e#0#36#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zdemo/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="371">
+              <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
               <folding>
                 <element signature="e#704#736#0" expanded="true" />
               </folding>
@@ -83,11 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auser/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-              <folding>
-                <element signature="e#1#33#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="96">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -102,11 +93,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/auser/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="312">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -125,24 +116,30 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/auser/urls.py" />
-        <option value="$PROJECT_DIR$/auser/views.py" />
         <option value="$PROJECT_DIR$/brouter/views.py" />
         <option value="$PROJECT_DIR$/brouter/urls.py" />
         <option value="$PROJECT_DIR$/zdemo/settings.py" />
+        <option value="$PROJECT_DIR$/auser/views.py" />
         <option value="$PROJECT_DIR$/zdemo/urls.py" />
         <option value="$PROJECT_DIR$/methods/urls.py" />
         <option value="$PROJECT_DIR$/methods/views.py" />
+        <option value="$PROJECT_DIR$/auser/urls.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="608" />
-    <option name="y" value="100" />
+    <option name="x" value="530" />
+    <option name="y" value="96" />
     <option name="width" value="1515" />
     <option name="height" value="1085" />
   </component>
@@ -271,7 +268,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586651312782</updated>
       <workItem from="1586651314220" duration="19308000" />
-      <workItem from="1586707664888" duration="3210000" />
+      <workItem from="1586707664888" duration="17383000" />
     </task>
     <task id="LOCAL-00001" summary="1.创建了子运用 2.注册子运用 3.创建视图函数 4.在总工程主路由设置了子路由 5.添加了子路由 6.设置静态文件 7.配置了文件 8.路由的屏蔽 9.在设置里面 修改了汉化和时区">
       <created>1586682383411</created>
@@ -280,11 +277,25 @@
       <option name="project" value="LOCAL" />
       <updated>1586682383411</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1.创建一个子应用methods 2.添加了拼接参数解析 3.添加了插叙参数解析 4.路由反解析">
+      <created>1586740619328</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586740619328</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1.添加request五种方式，1.1拼接路径(正则匹配)，1.2查询字符串(request.GET)，1.3form表单请求方式(request.POST),1.4not_form非form表单请求方式(request.body)，注意拿到的是二进制数据格式，1.5请求头请求方式(request.META),返回的是字典数据格式&#10;2 可以给子路由取别名，在视图函数里面反解析获取请求路径，并可以根据获取的请求路径重定向到对应的功能函数并返回给前端浏览器">
+      <created>1586781570453</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586781570453</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22518000" />
+    <option name="totallyTimeSpent" value="36691000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -296,8 +307,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="608" y="100" width="1515" height="1085" extended-state="0" />
-    <editor active="true" />
+    <frame x="530" y="96" width="1515" height="1085" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18660288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -312,8 +322,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.35812965" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003418" side_tool="true" weight="0.35812965" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49965823" visible="true" weight="0.35812965" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32837406" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -327,18 +337,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.创建了子运用 2.注册子运用 3.创建视图函数 4.在总工程主路由设置了子路由 5.添加了子路由 6.设置静态文件 7.配置了文件 8.路由的屏蔽 9.在设置里面 修改了汉化和时区" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.创建了子运用 2.注册子运用 3.创建视图函数 4.在总工程主路由设置了子路由 5.添加了子路由 6.设置静态文件 7.配置了文件 8.路由的屏蔽 9.在设置里面 修改了汉化和时区" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/auser/views.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="1.创建一个子应用methods 2.添加了拼接参数解析 3.添加了插叙参数解析 4.路由反解析" />
+    <MESSAGE value="1.添加request五种方式，1.1拼接路径(正则匹配)，1.2查询字符串(request.GET)，1.3form表单请求方式(request.POST),1.4not_form非form表单请求方式(request.body)，注意拿到的是二进制数据格式，1.5请求头请求方式(request.META),返回的是字典数据格式&#10;2 可以给子路由取别名，在视图函数里面反解析获取请求路径，并可以根据获取的请求路径重定向到对应的功能函数并返回给前端浏览器" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.添加request五种方式，1.1拼接路径(正则匹配)，1.2查询字符串(request.GET)，1.3form表单请求方式(request.POST),1.4not_form非form表单请求方式(request.body)，注意拿到的是二进制数据格式，1.5请求头请求方式(request.META),返回的是字典数据格式&#10;2 可以给子路由取别名，在视图函数里面反解析获取请求路径，并可以根据获取的请求路径重定向到对应的功能函数并返回给前端浏览器" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/zdemo$manage.coverage" NAME="manage Coverage Results" MODIFIED="1586707617183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -360,13 +361,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zdemo/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
-          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -380,50 +374,64 @@
     <entry file="file://$PROJECT_DIR$/auser/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/auser/views.py">
+    <entry file="file://$PROJECT_DIR$/zdemo/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auser/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="e#1#33#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-195">
+          <caret line="61" column="14" lean-forward="true" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zdemo/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="371">
+          <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
           <folding>
             <element signature="e#704#736#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/methods/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/methods/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/methods/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="288">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/methods/views.py">
+    <entry file="file://$PROJECT_DIR$/auser/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="96">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auser/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
