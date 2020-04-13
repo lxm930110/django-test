@@ -15,6 +15,9 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 
 # 工程项目路径
+# os.path.abspath(__file__) 获取当前文件的绝对路径
+# os.path.dirname(os.path.abspath(__file__))   获取当前文件绝对路劲的上一级路劲 （zdemo）
+# os.path.dirname(os.path.dirname(os.path.abspath(__file__))) 获取当前文件绝对路劲的上上一级路劲 zdemo
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 print('总工程路径:', BASE_DIR)
@@ -60,7 +63,9 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    #  Django 默认开启了 CSRF 防护，会对上述请求方式进行 CSRF 防护验证，在测试时可以关闭 CSRF 防护机制
+    # 'django.middleware.csrf.CsrfViewMiddleware',
+
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
