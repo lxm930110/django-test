@@ -11,17 +11,18 @@ def object_response(request):
     #     content_type='text/html; charset=utf8',
     #     status=200
     # )
-    return HttpResponse(
-        content="{'name':'zilong'}",
-        content_type='application/json; charset=utf8',
-        status=200
-    )
+    # return HttpResponse(
+    #     content="{'name':'zilong'}",
+    #     content_type='application/json; charset=utf8',
+    #     status=200
+    # )
         # 属性
-    # response = HttpResponse()
-    # response.content = '操作属性方式'
-    # response.content_type = ''
-    # response.status_code = 200
-    # return response
+    response = HttpResponse()
+    response.content = '操作属性方式'
+    # response['itcast'] = 'python'
+    response.content_type = ''
+    response.status_code = 200
+    return response
 
 
 def json_response(request):

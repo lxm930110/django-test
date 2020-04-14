@@ -32,6 +32,8 @@ urlpatterns = [
     path(r'', include('cresponse.urls')),
     # cookie子运用
     path(r'', include('ccookie.urls')),
+    # session子运用
+    path(r'', include('csession.urls')),
 
 
 ]

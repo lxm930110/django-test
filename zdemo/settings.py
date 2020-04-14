@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'methods',
     'cresponse',
     'ccookie',
+    'csession',
 ]
 
 # 中间件
@@ -157,3 +158,17 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static_files')]
+
+
+# sesssion 缓存在redis进行的配置
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://192.168.107.142:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_CACHE_ALIAS = "default"
