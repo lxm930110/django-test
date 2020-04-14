@@ -55,6 +55,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'auser',
     'methods',
+    'cresponse',
+    'ccookie',
 ]
 
 # 中间件
