@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e9e2127-703d-46a9-a67b-de5a60eea967" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ccookie/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ccookie/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ccookie/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ccookie/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ccookie/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ccookie/tests.py" afterDir="false" />
+    <list default="true" id="7e9e2127-703d-46a9-a67b-de5a60eea967" name="Default Changelist" comment="1.session的设置与获取&#10;request.session['key'] = value  # 设置&#10;result = request.session.get('key') # 获取&#10;session是保存在服务端，可以通过redis缓存机制保存在redis中，通过生成sessionid在redis中为key，session设置的值为value，并通过cookie把sessionid一并返回到浏览器，保存在浏览器的cookie生成的文件夹中，cookie自动生成一个key对应value(sessionid)的值,注意cookie这里存储的sessionid是redis里面的部分sessionid&#10;2.利用所学的类视图定义了一个SessionView类，通过类里面post和get方法分别获取和设置session&#10;类视图的注意点：在对应的子应用里面的子路由中类名后添加as_view()方法">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zdemo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/zdemo/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdemo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/zdemo/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,31 +20,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zdemo/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+            <state relative-caret-position="1440">
+              <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/methods/views.py">
+        <entry file="file://$PROJECT_DIR$/csession/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="63" column="22" lean-forward="true" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="22" />
+            <state relative-caret-position="144">
+              <caret line="8" column="5" selection-end-line="8" selection-end-column="5" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cresponse/urls.py">
+        <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="408">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/add_decorator/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#1#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,8 +62,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cresponse/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            <state relative-caret-position="528">
+              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cresponse/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/add_decorator/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-160">
+              <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -70,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zdemo/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+            <state relative-caret-position="792">
+              <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
               <folding>
                 <element signature="e#704#736#0" expanded="true" />
               </folding>
@@ -80,47 +105,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ccookie/urls.py">
+        <entry file="file://$USER_HOME$/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/views/generic/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="1248">
+              <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ccookie/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
+                <element signature="e#1595#2112#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auser/tests.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auser/models.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auser/views.py">
+        <entry file="file://$PROJECT_DIR$/csession/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="96">
+              <caret line="4" column="33" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -145,19 +145,23 @@
         <option value="$PROJECT_DIR$/auser/views.py" />
         <option value="$PROJECT_DIR$/methods/urls.py" />
         <option value="$PROJECT_DIR$/auser/urls.py" />
-        <option value="$PROJECT_DIR$/methods/views.py" />
         <option value="$PROJECT_DIR$/cresponse/urls.py" />
-        <option value="$PROJECT_DIR$/cresponse/views.py" />
-        <option value="$PROJECT_DIR$/zdemo/urls.py" />
         <option value="$PROJECT_DIR$/ccookie/urls.py" />
         <option value="$PROJECT_DIR$/ccookie/views.py" />
+        <option value="$PROJECT_DIR$/methods/views.py" />
+        <option value="$PROJECT_DIR$/cresponse/views.py" />
+        <option value="$PROJECT_DIR$/csession/urls.py" />
+        <option value="$PROJECT_DIR$/csession/views.py" />
         <option value="$PROJECT_DIR$/zdemo/settings.py" />
+        <option value="$PROJECT_DIR$/zdemo/urls.py" />
+        <option value="$PROJECT_DIR$/add_decorator/urls.py" />
+        <option value="$PROJECT_DIR$/add_decorator/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="759" />
-    <option name="y" value="94" />
+    <option name="x" value="214" />
+    <option name="y" value="162" />
     <option name="width" value="1515" />
     <option name="height" value="1093" />
   </component>
@@ -180,12 +184,12 @@
             <path>
               <item name="zdemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="zdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="ccookie" type="462c0819:PsiDirectoryNode" />
+              <item name="add_decorator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zdemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="zdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="methods" type="462c0819:PsiDirectoryNode" />
+              <item name="csession" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -282,7 +286,8 @@
       <updated>1586651312782</updated>
       <workItem from="1586651314220" duration="19308000" />
       <workItem from="1586707664888" duration="17383000" />
-      <workItem from="1586781960109" duration="12981000" />
+      <workItem from="1586781960109" duration="33544000" />
+      <workItem from="1586884821689" duration="232000" />
     </task>
     <task id="LOCAL-00001" summary="1.创建了子运用 2.注册子运用 3.创建视图函数 4.在总工程主路由设置了子路由 5.添加了子路由 6.设置静态文件 7.配置了文件 8.路由的屏蔽 9.在设置里面 修改了汉化和时区">
       <created>1586682383411</created>
@@ -319,11 +324,25 @@
       <option name="project" value="LOCAL" />
       <updated>1586798762721</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1.cookie的设置,1.1 cookie的获取request.COOKIES.get(''),1.2cookie的设置response.set.cookie('','',max_age=)注意时间秒为单位">
+      <created>1586826393884</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586826393884</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1.session的设置与获取&#10;request.session['key'] = value  # 设置&#10;result = request.session.get('key') # 获取&#10;session是保存在服务端，可以通过redis缓存机制保存在redis中，通过生成sessionid在redis中为key，session设置的值为value，并通过cookie把sessionid一并返回到浏览器，保存在浏览器的cookie生成的文件夹中，cookie自动生成一个key对应value(sessionid)的值,注意cookie这里存储的sessionid是redis里面的部分sessionid&#10;2.利用所学的类视图定义了一个SessionView类，通过类里面post和get方法分别获取和设置session&#10;类视图的注意点：在对应的子应用里面的子路由中类名后添加as_view()方法">
+      <created>1586857169397</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586857169397</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49672000" />
+    <option name="totallyTimeSpent" value="70235000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -335,15 +354,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="759" y="94" width="1515" height="1093" extended-state="0" />
+    <frame x="214" y="162" width="1515" height="1093" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18933699" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19207108" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32943678" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -352,7 +371,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010253" side_tool="true" weight="0.28556374" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4989747" weight="0.21285564" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4989747" visible="true" weight="0.2655427" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32837406" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -369,10 +388,12 @@
     <MESSAGE value="1.创建一个子应用methods 2.添加了拼接参数解析 3.添加了插叙参数解析 4.路由反解析" />
     <MESSAGE value="1.添加request五种方式，1.1拼接路径(正则匹配)，1.2查询字符串(request.GET)，1.3form表单请求方式(request.POST),1.4not_form非form表单请求方式(request.body)，注意拿到的是二进制数据格式，1.5请求头请求方式(request.META),返回的是字典数据格式&#10;2 可以给子路由取别名，在视图函数里面反解析获取请求路径，并可以根据获取的请求路径重定向到对应的功能函数并返回给前端浏览器" />
     <MESSAGE value="1.response响应方式 (HttpResponse)&#10;1.1 response=HttpResponse(),response.content='',response.content_type='',response.status_code='', #属性&#10;1.2 HttpResponse(content='',content_type='',status='') # 参数&#10;&#10;2 JsonResponse  (HttpResponse)的子类&#10;return JsonResponse({'name':'laowang'})&#10;return JsonResponse([{'name':'laowang'}], safe=False) 如果返回是列表格式需要修改safe=False&#10;浏览器得到数据格式为JSON数据格式" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.response响应方式 (HttpResponse)&#10;1.1 response=HttpResponse(),response.content='',response.content_type='',response.status_code='', #属性&#10;1.2 HttpResponse(content='',content_type='',status='') # 参数&#10;&#10;2 JsonResponse  (HttpResponse)的子类&#10;return JsonResponse({'name':'laowang'})&#10;return JsonResponse([{'name':'laowang'}], safe=False) 如果返回是列表格式需要修改safe=False&#10;浏览器得到数据格式为JSON数据格式" />
+    <MESSAGE value="1.cookie的设置,1.1 cookie的获取request.COOKIES.get(''),1.2cookie的设置response.set.cookie('','',max_age=)注意时间秒为单位" />
+    <MESSAGE value="1.session的设置与获取&#10;request.session['key'] = value  # 设置&#10;result = request.session.get('key') # 获取&#10;session是保存在服务端，可以通过redis缓存机制保存在redis中，通过生成sessionid在redis中为key，session设置的值为value，并通过cookie把sessionid一并返回到浏览器，保存在浏览器的cookie生成的文件夹中，cookie自动生成一个key对应value(sessionid)的值,注意cookie这里存储的sessionid是redis里面的部分sessionid&#10;2.利用所学的类视图定义了一个SessionView类，通过类里面post和get方法分别获取和设置session&#10;类视图的注意点：在对应的子应用里面的子路由中类名后添加as_view()方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.session的设置与获取&#10;request.session['key'] = value  # 设置&#10;result = request.session.get('key') # 获取&#10;session是保存在服务端，可以通过redis缓存机制保存在redis中，通过生成sessionid在redis中为key，session设置的值为value，并通过cookie把sessionid一并返回到浏览器，保存在浏览器的cookie生成的文件夹中，cookie自动生成一个key对应value(sessionid)的值,注意cookie这里存储的sessionid是redis里面的部分sessionid&#10;2.利用所学的类视图定义了一个SessionView类，通过类里面post和get方法分别获取和设置session&#10;类视图的注意点：在对应的子应用里面的子路由中类名后添加as_view()方法" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/zdemo$manage.coverage" NAME="manage Coverage Results" MODIFIED="1586707617183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zdemo$manage.coverage" NAME="manage Coverage Results" MODIFIED="1586855856081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/auser/__init__.py">
@@ -391,10 +412,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/wsgi.py">
+    <entry file="file://$PROJECT_DIR$/methods/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auser/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auser/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ccookie/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+        <state relative-caret-position="192">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auser/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auser/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -408,77 +458,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/methods/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/typing.pyi">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="237">
+          <caret line="348" column="8" selection-start-line="348" selection-start-column="8" selection-end-line="348" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auser/urls.py">
+    <entry file="file://$USER_HOME$/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/utils/datastructures.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="344">
+          <caret line="111" column="8" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auser/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auser/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auser/views.py">
+    <entry file="file://$USER_HOME$/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/http/request.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="344">
+          <caret line="277" column="8" selection-start-line="277" selection-start-column="8" selection-end-line="277" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/http/response.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="546" lean-forward="true" selection-start-line="546" selection-end-line="546" />
+        <state relative-caret-position="200">
+          <caret line="157" column="14" selection-start-line="157" selection-start-column="14" selection-end-line="157" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cresponse/views.py">
+    <entry file="file://$USER_HOME$/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/core/handlers/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="200">
+          <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="301" column="4" selection-start-line="301" selection-start-column="4" selection-end-line="301" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ccookie/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ccookie/urls.py">
+    <entry file="file://$PROJECT_DIR$/methods/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="740">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1504277551/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="188" column="4" selection-start-line="188" selection-start-column="4" selection-end-line="188" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zdemo/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+        <state relative-caret-position="1440">
+          <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csession/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cresponse/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cresponse/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="144">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -487,28 +570,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zdemo/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        <state relative-caret-position="792">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
           <folding>
             <element signature="e#704#736#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/methods/views.py">
+    <entry file="file://$USER_HOME$/.virtualenvs/django_py3_1.11/lib/python3.6/site-packages/django/views/generic/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="63" column="22" lean-forward="true" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="22" />
+        <state relative-caret-position="1248">
+          <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#1595#2112#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ccookie/views.py">
+    <entry file="file://$PROJECT_DIR$/csession/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        <state relative-caret-position="96">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_decorator/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="e#1#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_decorator/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>

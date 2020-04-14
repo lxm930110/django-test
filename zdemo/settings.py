@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'cresponse',
     'ccookie',
     'csession',
+    'add_decorator',
 ]
 
 # 中间件
