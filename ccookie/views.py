@@ -3,6 +3,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
+
 def set_cookie_fun(request):
 
     # 获取cookie的value

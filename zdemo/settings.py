@@ -73,6 +73,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'middleware.middleware_one', # 注册自定义的中间件
+    'middleware.middleware_two',    # 注册自定义的中间件
 ]
 
 ROOT_URLCONF = 'zdemo.urls'
@@ -82,7 +84,7 @@ ROOT_URLCONF = 'zdemo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'template')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

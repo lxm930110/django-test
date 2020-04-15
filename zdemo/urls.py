@@ -36,6 +36,7 @@ urlpatterns = [
     path(r'', include('csession.urls')),
     # add_decorator子运用
     path(r'', include('add_decorator.urls')),
+    path(r'', include('atemplate.urls')),
 
 
 ]

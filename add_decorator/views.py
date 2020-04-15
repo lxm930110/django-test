@@ -6,12 +6,13 @@ from django.utils.decorators import method_decorator
 from django.views.generic.base import View
 
 # 定义一个装饰器
+
 def my_decorator(fn):
 
     def wrapper(request, *args, **kwargs):
         print('给类视图里面的方法添加装饰器')
-        # 输出一下请求方式
-        print(request.method)
+        # 输出一下请求方式,请求
+        print(request.method, request.path)
         return fn(request, *args, **kwargs)
     return wrapper
 
@@ -45,8 +46,30 @@ def my_decorator(fn):
 '''利用django框架自带的@method_decorator实现给class直接装饰
     name = 'dispatch'给类里面所有方法添加装饰器
 '''
-@method_decorator(my_decorator, name='dispatch')
-class DecoratorFun(View):
+# @method_decorator(my_decorator, name='dispatch')
+# class DecoratorFun(View):
+#
+#     def get(self, request):
+#
+#         return HttpResponse('类视图中的get方法')
+#
+#     def post(self, request):
+#
+#         # print(request.method.lower())
+#
+#         return HttpResponse('类视图中的post方法')
+
+# 创建一个扩展类，具有添加装饰器的功能
+class DecoratorMixin(object):
+
+    @classmethod
+    def as_view(cls, *args, **kwargs):
+        view_fun = super().as_view(*args, **kwargs)
+        view = my_decorator(view_fun)
+        return view
+
+
+class DecoratorFun(DecoratorMixin, View):
 
     def get(self, request):
 
@@ -57,4 +80,5 @@ class DecoratorFun(View):
         # print(request.method.lower())
 
         return HttpResponse('类视图中的post方法')
+
 
