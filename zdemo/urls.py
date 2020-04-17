@@ -36,7 +36,10 @@ urlpatterns = [
     path(r'', include('csession.urls')),
     # add_decorator子运用
     path(r'', include('add_decorator.urls')),
+    # 添加模板
     path(r'', include('atemplate.urls')),
+    # 添加数据库子应用
+    path(r'', include('dbtest.urls')),
 
 
 ]

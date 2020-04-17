@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'ccookie',
     'csession',
     'add_decorator',
+    'dbtest',
 ]
 
 # 中间件
@@ -73,8 +74,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'middleware.middleware_one', # 注册自定义的中间件
-    'middleware.middleware_two',    # 注册自定义的中间件
+    # 'middleware.middleware_one', # 注册自定义的中间件
+    # 'middleware.middleware_two',    # 注册自定义的中间件
 ]
 
 ROOT_URLCONF = 'zdemo.urls'
@@ -109,8 +110,12 @@ WSGI_APPLICATION = 'zdemo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': '127.0.0.1',
+        'PORT': 3306,
+        'USER': 'root',
+        'PASSWORD': 'mysql',
+        'NAME': 'django_env',
     }
 }
 
@@ -150,7 +155,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)

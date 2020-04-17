@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>template模板</title>
+</head>
+<body>
+    <h1>template模板</h1>
+    <h3>姓名：{{ name }}</h3>
+    <h3>年龄：{{ age }}</h3>
+    <h3>兄弟姐妹：{{ siblings.0 }}</h3>
+    <h3>{{ data }}</h3>
+
+    <hr>
+    {% for i in siblings %}
+        <h3>{{ forloop.counter }} 兄弟姐妹：{{ i }}</h3>
+    {% endfor %}
+    {% if age > 18 %}
+        <h3>已成年</h3>
+    {% else %}
+        <h3>未成年</h3>
+    {% endif %}
+    <h3>{{ name|default:'匿名' }}</h3>
+    <hr>
+    <h3>{{ siblings|length }}</h3>
+    <hr>
+    <h3>{{ data|safe}}</h3>
+
+</body>
+</html>

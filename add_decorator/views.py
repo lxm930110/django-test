@@ -17,6 +17,8 @@ def my_decorator(fn):
     return wrapper
 
 
+
+
 # 直接在子路由里面提加装饰器不修改类视图
 # class DecoratorFun(View):
 #
@@ -60,6 +62,8 @@ def my_decorator(fn):
 #         return HttpResponse('类视图中的post方法')
 
 # 创建一个扩展类，具有添加装饰器的功能
+
+
 class DecoratorMixin(object):
 
     @classmethod
@@ -69,10 +73,11 @@ class DecoratorMixin(object):
         return view
 
 
+
+
 class DecoratorFun(DecoratorMixin, View):
 
     def get(self, request):
-
         return HttpResponse('类视图中的get方法')
 
     def post(self, request):
